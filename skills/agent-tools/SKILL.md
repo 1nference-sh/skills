@@ -1,5 +1,5 @@
 ---
-name: inference-sh
+name: agent-tools
 description: |
   Run 150+ AI apps via inference.sh CLI - image generation, video creation, LLMs, search, 3D, Twitter automation.
   Models: FLUX, Veo, Gemini, Grok, Claude, Seedance, OmniHuman, Tavily, Exa, OpenRouter, and many more.
@@ -71,30 +71,30 @@ infsh app run infsh/rodin-3d-generator --input '{"prompt": "a wooden chair"}'
 
 ```bash
 # Image generation (FLUX, Gemini, Grok, Seedream)
-npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/agent-skills@ai-image-generation
 
 # Video generation (Veo, Seedance, Wan, OmniHuman)
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # LLMs (Claude, Gemini, Kimi, GLM via OpenRouter)
-npx skills add inference-sh/skills@llm-models
+npx skills add inference-sh/agent-skills@llm-models
 
 # Web search (Tavily, Exa)
-npx skills add inference-sh/skills@web-search
+npx skills add inference-sh/agent-skills@web-search
 
 # AI avatars & lipsync (OmniHuman, Fabric, PixVerse)
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-avatar-video
 
 # Twitter/X automation
-npx skills add inference-sh/skills@twitter-automation
+npx skills add inference-sh/agent-skills@twitter-automation
 
 # Model-specific
-npx skills add inference-sh/skills@flux-image
-npx skills add inference-sh/skills@google-veo
+npx skills add inference-sh/agent-skills@flux-image
+npx skills add inference-sh/agent-skills@google-veo
 
 # Utilities
-npx skills add inference-sh/skills@image-upscaling
-npx skills add inference-sh/skills@background-removal
+npx skills add inference-sh/agent-skills@image-upscaling
+npx skills add inference-sh/agent-skills@background-removal
 ```
 
 ## Reference Files

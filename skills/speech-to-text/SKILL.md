@@ -111,16 +111,16 @@ Returns JSON with:
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 
 # Text-to-speech (reverse direction)
-npx skills add inference-sh/skills@text-to-speech
+npx skills add inference-sh/agent-skills@text-to-speech
 
 # Video generation (add captions)
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # AI avatars (lipsync with transcripts)
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-avatar-video
 ```
 
 Browse all audio apps: `infsh app list --category audio`

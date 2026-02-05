@@ -11,36 +11,36 @@ compatible with claude code, github copilot, and other ai coding assistants. gen
 ### Option 1: Install All Skills
 
 ```bash
-npx skills add inference-sh/skills
+npx skills add inference-sh/agent-skills
 ```
 
 ### Option 2: Install Specific Skills
 
 ```bash
 # Main platform skill
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 
 # Image generation
-npx skills add inference-sh/skills@ai-image-generation
-npx skills add inference-sh/skills@flux-image
+npx skills add inference-sh/agent-skills@ai-image-generation
+npx skills add inference-sh/agent-skills@flux-image
 
 # Video generation
-npx skills add inference-sh/skills@ai-video-generation
-npx skills add inference-sh/skills@google-veo
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-video-generation
+npx skills add inference-sh/agent-skills@google-veo
+npx skills add inference-sh/agent-skills@ai-avatar-video
 
 # LLMs (Claude, Gemini, Kimi, etc.)
-npx skills add inference-sh/skills@llm-models
+npx skills add inference-sh/agent-skills@llm-models
 
 # Web search (Tavily, Exa)
-npx skills add inference-sh/skills@web-search
+npx skills add inference-sh/agent-skills@web-search
 
 # Utilities
-npx skills add inference-sh/skills@image-upscaling
-npx skills add inference-sh/skills@background-removal
+npx skills add inference-sh/agent-skills@image-upscaling
+npx skills add inference-sh/agent-skills@background-removal
 
 # Social
-npx skills add inference-sh/skills@twitter-automation
+npx skills add inference-sh/agent-skills@twitter-automation
 ```
 
 ### Manual Installation

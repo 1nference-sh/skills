@@ -30,7 +30,7 @@ Sessions persist across function calls, allowing multi-step workflows.
 Use `--session new` to create a fresh session:
 
 ```bash
-RESULT=$(infsh app run agentic-browser --function open --session new --input '{
+RESULT=$(infsh app run agent-browser --function open --session new --input '{
   "url": "https://example.com"
 }')
 SESSION_ID=$(echo $RESULT | jq -r '.session_id')
@@ -43,20 +43,20 @@ All subsequent calls use the session ID:
 
 ```bash
 # Navigate
-infsh app run agentic-browser --function open --session $SESSION_ID --input '{
+infsh app run agent-browser --function open --session $SESSION_ID --input '{
   "url": "https://example.com/page2"
 }'
 
 # Interact
-infsh app run agentic-browser --function interact --session $SESSION_ID --input '{
+infsh app run agent-browser --function interact --session $SESSION_ID --input '{
   "action": "click", "ref": "@e1"
 }'
 
 # Screenshot
-infsh app run agentic-browser --function screenshot --session $SESSION_ID --input '{}'
+infsh app run agent-browser --function screenshot --session $SESSION_ID --input '{}'
 
 # Close
-infsh app run agentic-browser --function close --session $SESSION_ID --input '{}'
+infsh app run agent-browser --function close --session $SESSION_ID --input '{}'
 ```
 
 ## Session State
@@ -86,24 +86,24 @@ Run multiple independent sessions simultaneously:
 # Scrape multiple sites in parallel
 
 # Start sessions
-RESULT1=$(infsh app run agentic-browser --function open --session new --input '{
+RESULT1=$(infsh app run agent-browser --function open --session new --input '{
   "url": "https://site1.com"
 }')
 SESSION1=$(echo $RESULT1 | jq -r '.session_id')
 
-RESULT2=$(infsh app run agentic-browser --function open --session new --input '{
+RESULT2=$(infsh app run agent-browser --function open --session new --input '{
   "url": "https://site2.com"
 }')
 SESSION2=$(echo $RESULT2 | jq -r '.session_id')
 
 # Work with each session independently
-infsh app run agentic-browser --function screenshot --session $SESSION1 --input '{}' &
-infsh app run agentic-browser --function screenshot --session $SESSION2 --input '{}' &
+infsh app run agent-browser --function screenshot --session $SESSION1 --input '{}' &
+infsh app run agent-browser --function screenshot --session $SESSION2 --input '{}' &
 wait
 
 # Clean up both
-infsh app run agentic-browser --function close --session $SESSION1 --input '{}'
-infsh app run agentic-browser --function close --session $SESSION2 --input '{}'
+infsh app run agent-browser --function close --session $SESSION1 --input '{}'
+infsh app run agent-browser --function close --session $SESSION2 --input '{}'
 ```
 
 ### Use Cases for Parallel Sessions
@@ -118,7 +118,7 @@ infsh app run agentic-browser --function close --session $SESSION2 --input '{}'
 Always close sessions when done:
 
 ```bash
-infsh app run agentic-browser --function close --session $SESSION_ID --input '{}'
+infsh app run agent-browser --function close --session $SESSION_ID --input '{}'
 ```
 
 **Why close matters:**
@@ -133,11 +133,11 @@ infsh app run agentic-browser --function close --session $SESSION_ID --input '{}
 set -e
 
 cleanup() {
-  infsh app run agentic-browser --function close --session $SESSION_ID --input '{}' 2>/dev/null || true
+  infsh app run agent-browser --function close --session $SESSION_ID --input '{}' 2>/dev/null || true
 }
 trap cleanup EXIT
 
-SESSION_ID=$(infsh app run agentic-browser --function open --session new --input '{
+SESSION_ID=$(infsh app run agent-browser --function open --session new --input '{
   "url": "https://example.com"
 }' | jq -r '.session_id')
 
@@ -180,10 +180,10 @@ Sessions may expire after extended inactivity:
 
 ```bash
 # Check if session is still valid
-RESULT=$(infsh app run agentic-browser --function snapshot --session $SESSION_ID --input '{}' 2>&1)
+RESULT=$(infsh app run agent-browser --function snapshot --session $SESSION_ID --input '{}' 2>&1)
 if echo "$RESULT" | grep -q "session not found"; then
   echo "Session expired, starting new one"
-  SESSION_ID=$(infsh app run agentic-browser --function open --session new --input '{
+  SESSION_ID=$(infsh app run agent-browser --function open --session new --input '{
     "url": "https://example.com"
   }' | jq -r '.session_id')
 fi

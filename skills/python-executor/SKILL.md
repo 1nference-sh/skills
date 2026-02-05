@@ -170,13 +170,13 @@ infsh app run infsh/python-executor@high_memory --input input.json
 
 ```bash
 # AI image generation (for ML-based images)
-npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/agent-skills@ai-image-generation
 
 # AI video generation (for ML-based videos)
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # LLM models (for text generation)
-npx skills add inference-sh/skills@llm-models
+npx skills add inference-sh/agent-skills@llm-models
 ```
 
 ## Documentation

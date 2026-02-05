@@ -104,16 +104,16 @@ infsh app run google/veo-3-1-fast --input input.json
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 
 # All video generation models
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # AI avatars & lipsync
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-avatar-video
 
 # Image generation (for image-to-video)
-npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/agent-skills@ai-image-generation
 ```
 
 Browse all video apps: `infsh app list --category video`

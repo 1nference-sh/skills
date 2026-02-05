@@ -113,19 +113,19 @@ infsh app run bytedance/omnihuman-1-5 --input '{
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 
 # AI avatars (combine TTS with talking heads)
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-avatar-video
 
 # AI music generation
-npx skills add inference-sh/skills@ai-music-generation
+npx skills add inference-sh/agent-skills@ai-music-generation
 
 # Speech-to-text (transcription)
-npx skills add inference-sh/skills@speech-to-text
+npx skills add inference-sh/agent-skills@speech-to-text
 
 # Video generation
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 ```
 
 Browse all apps: `infsh app list`

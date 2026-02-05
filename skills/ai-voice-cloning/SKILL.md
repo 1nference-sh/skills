@@ -258,19 +258,19 @@ infsh app run infsh/kokoro-tts --input '{
 
 ```bash
 # All TTS models
-npx skills add inference-sh/skills@text-to-speech
+npx skills add inference-sh/agent-skills@text-to-speech
 
 # Podcast creation
-npx skills add inference-sh/skills@ai-podcast-creation
+npx skills add inference-sh/agent-skills@ai-podcast-creation
 
 # AI avatars
-npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/agent-skills@ai-avatar-video
 
 # Video generation
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # Full platform skill
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 ```
 
 Browse audio apps: `infsh app list --category audio`

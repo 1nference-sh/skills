@@ -223,19 +223,19 @@ infsh app run google/veo-3-1-fast --input '{
 
 ```bash
 # Generate videos
-npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/agent-skills@ai-video-generation
 
 # Google Veo specific
-npx skills add inference-sh/skills@google-veo
+npx skills add inference-sh/agent-skills@google-veo
 
 # Generate images for image-to-video
-npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/agent-skills@ai-image-generation
 
 # General prompt engineering
-npx skills add inference-sh/skills@prompt-engineering
+npx skills add inference-sh/agent-skills@prompt-engineering
 
 # Full platform skill
-npx skills add inference-sh/skills@inference-sh
+npx skills add inference-sh/agent-skills@inference-sh
 ```
 
 Browse all video apps: `infsh app list --category video`
