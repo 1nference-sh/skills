@@ -288,16 +288,16 @@ research "your query here"
 
 ```bash
 # Web search tools
-npx skills add inferencesh/skills@web-search
+npx skills add inference-sh/skills@web-search
 
 # LLM models
-npx skills add inferencesh/skills@llm-models
+npx skills add inference-sh/skills@llm-models
 
 # Content pipelines
-npx skills add inferencesh/skills@ai-content-pipeline
+npx skills add inference-sh/skills@ai-content-pipeline
 
 # Full platform skill
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 ```
 
 Browse all apps: `infsh app list`

@@ -239,10 +239,10 @@ For each piece of long-form content, create:
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@ai-social-media-content
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@text-to-speech
-npx skills add inferencesh/skills@twitter-automation
+npx skills add inference-sh/skills@ai-social-media-content
+npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@text-to-speech
+npx skills add inference-sh/skills@twitter-automation
 ```
 
 Browse all apps: `infsh app list`

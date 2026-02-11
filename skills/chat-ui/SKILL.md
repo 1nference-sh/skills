@@ -121,13 +121,13 @@ Components use Tailwind CSS and shadcn/ui design tokens:
 
 ```bash
 # Full agent component (recommended)
-npx skills add inferencesh/skills@agent-ui
+npx skills add inference-sh/skills@agent-ui
 
 # Declarative widgets
-npx skills add inferencesh/skills@widgets-ui
+npx skills add inference-sh/skills@widgets-ui
 
 # Markdown rendering
-npx skills add inferencesh/skills@markdown-ui
+npx skills add inference-sh/skills@markdown-ui
 ```
 
 ## Documentation

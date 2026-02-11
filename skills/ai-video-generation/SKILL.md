@@ -148,22 +148,22 @@ infsh app run infsh/media-merger --input '{
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 
 # Google Veo specific
-npx skills add inferencesh/skills@google-veo
+npx skills add inference-sh/skills@google-veo
 
 # AI avatars & lipsync
-npx skills add inferencesh/skills@ai-avatar-video
+npx skills add inference-sh/skills@ai-avatar-video
 
 # Text-to-speech (for video narration)
-npx skills add inferencesh/skills@text-to-speech
+npx skills add inference-sh/skills@text-to-speech
 
 # Image generation (for image-to-video)
-npx skills add inferencesh/skills@ai-image-generation
+npx skills add inference-sh/skills@ai-image-generation
 
 # Twitter (post videos)
-npx skills add inferencesh/skills@twitter-automation
+npx skills add inference-sh/skills@twitter-automation
 ```
 
 Browse all apps: `infsh app list`

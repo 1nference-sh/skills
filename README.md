@@ -13,36 +13,36 @@ compatible with claude code, github copilot, and other ai coding assistants. gen
 ### Option 1: Install All Skills
 
 ```bash
-npx skills add inferencesh/skills
+npx skills add inference-sh/skills
 ```
 
 ### Option 2: Install Specific Skills
 
 ```bash
 # Main platform skill
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 
 # Image generation
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@flux-image
+npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@flux-image
 
 # Video generation
-npx skills add inferencesh/skills@ai-video-generation
-npx skills add inferencesh/skills@google-veo
-npx skills add inferencesh/skills@ai-avatar-video
+npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/skills@google-veo
+npx skills add inference-sh/skills@ai-avatar-video
 
 # LLMs (Claude, Gemini, Kimi, etc.)
-npx skills add inferencesh/skills@llm-models
+npx skills add inference-sh/skills@llm-models
 
 # Web search (Tavily, Exa)
-npx skills add inferencesh/skills@web-search
+npx skills add inference-sh/skills@web-search
 
 # Utilities
-npx skills add inferencesh/skills@image-upscaling
-npx skills add inferencesh/skills@background-removal
+npx skills add inference-sh/skills@image-upscaling
+npx skills add inference-sh/skills@background-removal
 
 # Social
-npx skills add inferencesh/skills@twitter-automation
+npx skills add inference-sh/skills@twitter-automation
 ```
 
 ### Manual Installation

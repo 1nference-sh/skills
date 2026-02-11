@@ -200,9 +200,9 @@ infsh app run infsh/python-executor --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@pitch-deck-visuals
-npx skills add inferencesh/skills@technical-blog-writing
-npx skills add inferencesh/skills@competitor-teardown
+npx skills add inference-sh/skills@pitch-deck-visuals
+npx skills add inference-sh/skills@technical-blog-writing
+npx skills add inference-sh/skills@competitor-teardown
 ```
 
 Browse all apps: `infsh app list`

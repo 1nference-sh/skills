@@ -67,16 +67,16 @@ Returns a PNG with transparent background.
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 
 # Image generation
-npx skills add inferencesh/skills@ai-image-generation
+npx skills add inference-sh/skills@ai-image-generation
 
 # FLUX models (including inpainting)
-npx skills add inferencesh/skills@flux-image
+npx skills add inference-sh/skills@flux-image
 
 # Upscaling
-npx skills add inferencesh/skills@image-upscaling
+npx skills add inference-sh/skills@image-upscaling
 ```
 
 Browse all image apps: `infsh app list --category image`

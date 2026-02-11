@@ -205,9 +205,9 @@ infsh app run falai/flux-dev-lora --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@content-repurposing
-npx skills add inferencesh/skills@linkedin-content
+npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@content-repurposing
+npx skills add inference-sh/skills@linkedin-content
 ```
 
 Browse all apps: `infsh app list`

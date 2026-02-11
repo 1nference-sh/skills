@@ -196,9 +196,9 @@ infsh app run bytedance/omnihuman-1-5 --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@ai-avatar-video
-npx skills add inferencesh/skills@ai-video-generation
-npx skills add inferencesh/skills@text-to-speech
+npx skills add inference-sh/skills@ai-avatar-video
+npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/skills@text-to-speech
 ```
 
 Browse all apps: `infsh app list`

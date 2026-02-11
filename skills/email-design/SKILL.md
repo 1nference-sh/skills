@@ -230,9 +230,9 @@ HTML buttons render differently across email clients. Use the "bulletproof butto
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@landing-page-design
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@prompt-engineering
+npx skills add inference-sh/skills@landing-page-design
+npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@prompt-engineering
 ```
 
 Browse all apps: `infsh app list`

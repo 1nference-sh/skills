@@ -201,9 +201,9 @@ Layout: Photos in a row with name, title, and one credential each.
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@competitor-teardown
-npx skills add inferencesh/skills@data-visualization
-npx skills add inferencesh/skills@ai-image-generation
+npx skills add inference-sh/skills@competitor-teardown
+npx skills add inference-sh/skills@data-visualization
+npx skills add inference-sh/skills@ai-image-generation
 ```
 
 Browse all apps: `infsh app list`

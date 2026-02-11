@@ -251,9 +251,9 @@ infsh app run infsh/html-to-image --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@linkedin-content
-npx skills add inferencesh/skills@content-repurposing
-npx skills add inferencesh/skills@social-media-carousel
+npx skills add inference-sh/skills@linkedin-content
+npx skills add inference-sh/skills@content-repurposing
+npx skills add inference-sh/skills@social-media-carousel
 ```
 
 Browse all apps: `infsh app list`

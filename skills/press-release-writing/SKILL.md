@@ -278,8 +278,8 @@ Over 800 words and editors won't read it. Under 400 and it lacks substance.
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@web-search
-npx skills add inferencesh/skills@prompt-engineering
+npx skills add inference-sh/skills@web-search
+npx skills add inference-sh/skills@prompt-engineering
 ```
 
 Browse all apps: `infsh app list`

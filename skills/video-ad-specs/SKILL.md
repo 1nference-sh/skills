@@ -241,10 +241,10 @@ infsh app run infsh/caption-videos --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@ai-video-generation
-npx skills add inferencesh/skills@video-prompting-guide
-npx skills add inferencesh/skills@text-to-speech
-npx skills add inferencesh/skills@prompt-engineering
+npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/skills@video-prompting-guide
+npx skills add inference-sh/skills@text-to-speech
+npx skills add inference-sh/skills@prompt-engineering
 ```
 
 Browse all apps: `infsh app list`

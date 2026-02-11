@@ -221,9 +221,9 @@ End every post with engagement driver:
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@social-media-carousel
-npx skills add inferencesh/skills@content-repurposing
-npx skills add inferencesh/skills@twitter-thread-creation
+npx skills add inference-sh/skills@social-media-carousel
+npx skills add inference-sh/skills@content-repurposing
+npx skills add inference-sh/skills@twitter-thread-creation
 ```
 
 Browse all apps: `infsh app list`

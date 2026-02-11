@@ -269,19 +269,19 @@ Outro
 
 ```bash
 # Text-to-speech models
-npx skills add inferencesh/skills@text-to-speech
+npx skills add inference-sh/skills@text-to-speech
 
 # AI music generation
-npx skills add inferencesh/skills@ai-music-generation
+npx skills add inference-sh/skills@ai-music-generation
 
 # LLM for scripts
-npx skills add inferencesh/skills@llm-models
+npx skills add inference-sh/skills@llm-models
 
 # Content pipelines
-npx skills add inferencesh/skills@ai-content-pipeline
+npx skills add inference-sh/skills@ai-content-pipeline
 
 # Full platform skill
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 ```
 
 Browse all apps: `infsh app list --category audio`

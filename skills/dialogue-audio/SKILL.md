@@ -211,9 +211,9 @@ infsh app run infsh/media-merger --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@text-to-speech
-npx skills add inferencesh/skills@ai-podcast-creation
-npx skills add inferencesh/skills@ai-avatar-video
+npx skills add inference-sh/skills@text-to-speech
+npx skills add inference-sh/skills@ai-podcast-creation
+npx skills add inference-sh/skills@ai-avatar-video
 ```
 
 Browse all apps: `infsh app list`

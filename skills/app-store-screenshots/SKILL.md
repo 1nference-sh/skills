@@ -255,10 +255,10 @@ Google Play Console supports store listing experiments:
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@ai-image-generation
-npx skills add inferencesh/skills@ai-video-generation
-npx skills add inferencesh/skills@image-upscaling
-npx skills add inferencesh/skills@prompt-engineering
+npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@ai-video-generation
+npx skills add inference-sh/skills@image-upscaling
+npx skills add inference-sh/skills@prompt-engineering
 ```
 
 Browse all apps: `infsh app list`

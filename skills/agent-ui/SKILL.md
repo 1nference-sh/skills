@@ -99,13 +99,13 @@ const scopedTools = createScopedTools(formRef)
 
 ```bash
 # Chat UI building blocks
-npx skills add inferencesh/skills@chat-ui
+npx skills add inference-sh/skills@chat-ui
 
 # Declarative widgets from JSON
-npx skills add inferencesh/skills@widgets-ui
+npx skills add inference-sh/skills@widgets-ui
 
 # Tool lifecycle UI
-npx skills add inferencesh/skills@tools-ui
+npx skills add inference-sh/skills@tools-ui
 ```
 
 ## Documentation

@@ -302,8 +302,8 @@ infsh app run infsh/stitch-images --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@web-search
-npx skills add inferencesh/skills@prompt-engineering
+npx skills add inference-sh/skills@web-search
+npx skills add inference-sh/skills@prompt-engineering
 ```
 
 Browse all apps: `infsh app list`

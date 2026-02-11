@@ -131,16 +131,16 @@ infsh app run x/post-create --input '{
 
 ```bash
 # Full platform skill (all 150+ apps)
-npx skills add inferencesh/skills@inference-sh
+npx skills add inference-sh/skills@inference-sh
 
 # Image generation (create images to post)
-npx skills add inferencesh/skills@ai-image-generation
+npx skills add inference-sh/skills@ai-image-generation
 
 # Video generation (create videos to post)
-npx skills add inferencesh/skills@ai-video-generation
+npx skills add inference-sh/skills@ai-video-generation
 
 # AI avatars (create presenter videos)
-npx skills add inferencesh/skills@ai-avatar-video
+npx skills add inference-sh/skills@ai-avatar-video
 ```
 
 Browse all apps: `infsh app list`

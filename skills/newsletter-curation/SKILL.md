@@ -283,9 +283,9 @@ infsh app run x/post-create --input '{
 ## Related Skills
 
 ```bash
-npx skills add inferencesh/skills@email-design
-npx skills add inferencesh/skills@content-repurposing
-npx skills add inferencesh/skills@seo-content-brief
+npx skills add inference-sh/skills@email-design
+npx skills add inference-sh/skills@content-repurposing
+npx skills add inference-sh/skills@seo-content-brief
 ```
 
 Browse all apps: `infsh app list`
