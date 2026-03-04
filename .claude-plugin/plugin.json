@@ -1,0 +1,43 @@
+{
+  "name": "inference-sh",
+  "description": "AI agent skills for 150+ models via inference.sh CLI - generate images with FLUX, create videos with Veo, call LLMs, search the web, and more",
+  "version": "1.0.0",
+  "author": {
+    "name": "inference.sh",
+    "email": "support@inference.sh"
+  },
+  "homepage": "https://inference.sh",
+  "repository": "https://github.com/inference-sh/skills",
+  "license": "MIT",
+  "keywords": [
+    "ai",
+    "inference",
+    "flux",
+    "veo",
+    "llm",
+    "image-generation",
+    "video-generation",
+    "claude",
+    "gemini",
+    "tavily"
+  ],
+  "skills": [
+    "./tools/",
+    "./tools/image/",
+    "./tools/video/",
+    "./tools/audio/",
+    "./tools/llm/",
+    "./tools/social/",
+    "./tools/utilities/",
+    "./sdk/",
+    "./ui/",
+    "./guides/prompting/",
+    "./guides/content/",
+    "./guides/product/",
+    "./guides/design/",
+    "./guides/photo/",
+    "./guides/social/",
+    "./guides/video/",
+    "./guides/writing/"
+  ]
+}
