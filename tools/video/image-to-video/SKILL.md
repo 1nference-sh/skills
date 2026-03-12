@@ -35,6 +35,7 @@ infsh app run falai/wan-2-5-i2v --input '{
 | Model | App ID | Best For | Motion Style |
 |-------|--------|----------|-------------|
 | **Wan 2.5 i2v** | `falai/wan-2-5-i2v` | Realistic motion, natural movement | Photorealistic, subtle |
+| **WAN-I2V (Pruna)** | `pruna/wan-i2v` | Economical, fast, 480p/720p | Natural, efficient |
 | **Seedance 1.5 Pro** | `bytedance/seedance-1-5-pro` | Stylized, creative, animation-like | Artistic, expressive |
 | **Seedance 1.0 Pro** | `bytedance/seedance-1-0-pro` | General purpose, good quality | Balanced |
 | **Fabric 1.0** | `falai/fabric-1-0` | Cloth, fabric, liquid, flowing materials | Physics-based flow |
@@ -232,6 +233,7 @@ infsh app run falai/wan-2-5-i2v --input '{
 ```bash
 npx skills add inference-sh/skills@ai-video-generation
 npx skills add inference-sh/skills@ai-image-generation
+npx skills add inference-sh/skills@p-video
 npx skills add inference-sh/skills@video-prompting-guide
 npx skills add inference-sh/skills@prompt-engineering
 ```

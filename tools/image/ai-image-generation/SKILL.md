@@ -28,6 +28,9 @@ infsh app run falai/flux-dev-lora --input '{"prompt": "a cat astronaut in space"
 |-------|--------|----------|
 | FLUX Dev LoRA | `falai/flux-dev-lora` | High quality with custom styles |
 | FLUX.2 Klein LoRA | `falai/flux-2-klein-lora` | Fast with LoRA support (4B/9B) |
+| **P-Image** | `pruna/p-image` | Fast, economical, multiple aspects |
+| **P-Image-LoRA** | `pruna/p-image-lora` | Fast with preset LoRA styles |
+| **P-Image-Edit** | `pruna/p-image-edit` | Fast image editing |
 | Gemini 3 Pro | `google/gemini-3-pro-image-preview` | Google's latest |
 | Gemini 2.5 Flash | `google/gemini-2-5-flash-image` | Fast Google model |
 | Grok Imagine | `xai/grok-imagine-image` | xAI's model, multiple aspects |
@@ -36,6 +39,7 @@ infsh app run falai/flux-dev-lora --input '{"prompt": "a cat astronaut in space"
 | Seedream 3.0 | `bytedance/seedream-3-0-t2i` | Accurate text rendering |
 | Reve | `falai/reve` | Natural language editing, text rendering |
 | ImagineArt 1.5 Pro | `falai/imagine-art-1-5-pro-preview` | Ultra-high-fidelity 4K |
+| FLUX Klein 4B | `pruna/flux-klein-4b` | Ultra-cheap ($0.0001/image) |
 | Topaz Upscaler | `falai/topaz-image-upscaler` | Professional upscaling |
 
 ## Browse All Image Apps
@@ -113,6 +117,9 @@ infsh app run infsh/stitch-images --input '{
 ```bash
 # Full platform skill (all 150+ apps)
 npx skills add inference-sh/skills@agent-tools
+
+# Pruna P-Image (fast & economical)
+npx skills add inference-sh/skills@p-image
 
 # FLUX-specific skill
 npx skills add inference-sh/skills@flux-image

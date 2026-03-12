@@ -33,6 +33,8 @@ infsh app run google/veo-3-1-fast --input '{"prompt": "drone shot flying over a 
 | Veo 3 | `google/veo-3` | High quality with audio |
 | Veo 3 Fast | `google/veo-3-fast` | Fast with audio |
 | Veo 2 | `google/veo-2` | Realistic videos |
+| **P-Video** | `pruna/p-video` | Fast, economical, with audio support |
+| **WAN-T2V** | `pruna/wan-t2v` | Economical 480p/720p |
 | Grok Video | `xai/grok-imagine-video` | xAI, configurable duration |
 | Seedance 1.5 Pro | `bytedance/seedance-1-5-pro` | With first-frame control |
 | Seedance 1.0 Pro | `bytedance/seedance-1-0-pro` | Up to 1080p |
@@ -43,6 +45,8 @@ infsh app run google/veo-3-1-fast --input '{"prompt": "drone shot flying over a 
 |-------|--------|----------|
 | Wan 2.5 | `falai/wan-2-5` | Animate any image |
 | Wan 2.5 I2V | `falai/wan-2-5-i2v` | High quality i2v |
+| **WAN-I2V** | `pruna/wan-i2v` | Economical 480p/720p |
+| **P-Video** | `pruna/p-video` | Fast i2v with audio |
 | Seedance Lite | `bytedance/seedance-1-0-lite` | Lightweight 720p |
 
 ### Avatar / Lipsync
@@ -151,6 +155,9 @@ infsh app run infsh/media-merger --input '{
 ```bash
 # Full platform skill (all 150+ apps)
 npx skills add inference-sh/skills@agent-tools
+
+# Pruna P-Video (fast & economical)
+npx skills add inference-sh/skills@p-video
 
 # Google Veo specific
 npx skills add inference-sh/skills@google-veo

@@ -11,6 +11,10 @@
   "license": "MIT",
   "keywords": [
     "ai",
+    "video",
+    "image",
+    "generative",
+    "generate",
     "inference",
     "flux",
     "veo",
@@ -19,7 +23,8 @@
     "video-generation",
     "claude",
     "gemini",
-    "tavily"
+    "tavily",
+    "pruna"
   ],
   "skills": [
     "./guides/content/ai-automation-workflows/SKILL.md",
@@ -61,6 +66,7 @@
     "./sdk/javascript-sdk/SKILL.md",
     "./sdk/python-sdk/SKILL.md",
     "./tools/agent-tools/SKILL.md",
+    "./tools/infsh-cli/SKILL.md",
     "./tools/audio/ai-music-generation/SKILL.md",
     "./tools/audio/ai-voice-cloning/SKILL.md",
     "./tools/audio/dialogue-audio/SKILL.md",
