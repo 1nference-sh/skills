@@ -23,7 +23,7 @@ client = inference(api_key="inf_your_key")
 
 # Run an AI app
 result = client.run({
-    "app": "infsh/flux-schnell",
+    "app": "infsh/flux-1-dev",
     "input": {"prompt": "A sunset over mountains"}
 })
 print(result["output"])
@@ -62,7 +62,7 @@ Get your API key: Settings → API Keys → Create API Key
 
 ```python
 result = client.run({
-    "app": "infsh/flux-schnell",
+    "app": "infsh/flux-1-dev",
     "input": {"prompt": "A cat astronaut"}
 })
 
@@ -203,7 +203,7 @@ calculator = (
 )
 
 image_gen = (
-    app_tool("generate_image", "infsh/flux-schnell@latest")
+    app_tool("generate_image", "infsh/flux-1-dev@latest")
     .describe("Generate an image")
     .param("prompt", string("Image description"))
     .build()
@@ -270,7 +270,7 @@ greet = (
 
 ```python
 generate = (
-    app_tool("generate_image", "infsh/flux-schnell@latest")
+    app_tool("generate_image", "infsh/flux-1-dev@latest")
     .describe("Generate an image from text")
     .param("prompt", string("Image description"))
     .setup({"model": "schnell"})
@@ -399,7 +399,7 @@ async def main():
 
     # Async app execution
     result = await client.run({
-        "app": "infsh/flux-schnell",
+        "app": "infsh/flux-1-dev",
         "input": {"prompt": "A galaxy"}
     })
 

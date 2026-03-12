@@ -142,7 +142,7 @@ print(f"Type: {file['content_type']}")
 import requests
 
 result = client.run({
-    "app": "infsh/flux-schnell",
+    "app": "infsh/flux-1-dev",
     "input": {"prompt": "A sunset"}
 })
 

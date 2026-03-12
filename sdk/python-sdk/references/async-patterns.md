@@ -12,7 +12,7 @@ async def main():
     client = async_inference(api_key="inf_...")
 
     result = await client.run({
-        "app": "infsh/flux-schnell",
+        "app": "infsh/flux-1-dev",
         "input": {"prompt": "A sunset"}
     })
     print(result["output"])
@@ -38,7 +38,7 @@ async def parallel_requests():
     # Create all tasks
     tasks = [
         client.run({
-            "app": "infsh/flux-schnell",
+            "app": "infsh/flux-1-dev",
             "input": {"prompt": p}
         })
         for p in prompts
@@ -348,7 +348,7 @@ client = async_inference(api_key="inf_...")
 @app.post("/generate")
 async def generate(prompt: str):
     result = await client.run({
-        "app": "infsh/flux-schnell",
+        "app": "infsh/flux-1-dev",
         "input": {"prompt": prompt}
     })
     return {"image": result["output"]["url"]}
@@ -365,7 +365,7 @@ client = async_inference(api_key="inf_...")
 async def handle_generate(request):
     data = await request.json()
     result = await client.run({
-        "app": "infsh/flux-schnell",
+        "app": "infsh/flux-1-dev",
         "input": {"prompt": data["prompt"]}
     })
     return web.json_response({"image": result["output"]["url"]})

@@ -238,7 +238,7 @@ def robust_run(config, max_retries=3):
                 raise
 
 result = robust_run({
-    "app": "infsh/flux-schnell",
+    "app": "infsh/flux-1-dev",
     "input": {"prompt": "A serene landscape"}
 })
 ```
@@ -256,7 +256,7 @@ async def process_batch(items):
 
     async def process_one(item):
         result = await client.run({
-            "app": "infsh/flux-schnell",
+            "app": "infsh/flux-1-dev",
             "input": {"prompt": item}
         })
         return result

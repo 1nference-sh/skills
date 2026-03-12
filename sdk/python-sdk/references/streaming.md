@@ -163,9 +163,9 @@ async def run_parallel():
     client = async_inference(api_key="inf_...")
 
     configs = [
-        {"app": "infsh/flux-schnell", "input": {"prompt": "A mountain"}},
-        {"app": "infsh/flux-schnell", "input": {"prompt": "An ocean"}},
-        {"app": "infsh/flux-schnell", "input": {"prompt": "A forest"}}
+        {"app": "infsh/flux-1-dev", "input": {"prompt": "A mountain"}},
+        {"app": "infsh/flux-1-dev", "input": {"prompt": "An ocean"}},
+        {"app": "infsh/flux-1-dev", "input": {"prompt": "A forest"}}
     ]
 
     async def stream_one(config, index):
