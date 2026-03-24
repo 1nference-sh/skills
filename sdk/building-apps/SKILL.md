@@ -26,8 +26,42 @@ Always use `infsh app init` to create new apps — it scaffolds the correct proj
 ```bash
 infsh app init my-app              # Create app (interactive)
 infsh app init my-app --lang node  # Create Node.js app
-infsh app test                     # Test locally
-infsh app deploy                   # Deploy
+```
+
+## Development Workflow
+
+The standard cycle is: **init → test locally → deploy → run in cloud**.
+
+### 1. Test Locally
+
+Run your app on your own machine before deploying. This catches most issues early.
+
+```bash
+infsh app test                     # Uses input.json in the app directory
+infsh app test --input '{"prompt": "hello"}'  # Inline JSON
+infsh app test --save-example      # Generate a sample input.json from your schema
+```
+
+### 2. Deploy
+
+Push your app to the cloud. Use `--dry-run` first to validate configuration without actually deploying.
+
+```bash
+infsh app deploy --dry-run         # Validate without deploying
+infsh app deploy                   # Deploy for real
+```
+
+### 3. Run in Cloud
+
+After deploying, test the live version using `infsh app run`:
+
+```bash
+infsh app run user/app --input input.json
+infsh app run user/app@version --input '{"prompt": "hello"}'
+
+# Generate sample input for any deployed app
+infsh app sample user/app
+infsh app sample user/app --save input.json
 ```
 
 ## App Structure
