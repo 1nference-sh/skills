@@ -1,0 +1,39 @@
+name: synapse-layer
+description: Zero-Knowledge persistent memory for AI agents. Store, recall and transfer encrypted context across models (Claude, GPT, Gemini, Grok, Llama). MCP-native. Neural Handover™. Conflict Resolution Engine™.
+author: Ismael Marchi
+homepage: https://synapselayer.org
+repository: https://github.com/SynapseLayer/essencial
+npm: synapse-layer
+mcp_server: https://rbeycxzizrrdmxpilepc.supabase.co/functions/v1/mcp-server
+keywords:
+  - agent persistent memory
+  - cross-model context transfer
+  - zero-knowledge memory store
+  - recall past conversation
+  - memory handover between models
+  - semantic memory search
+  - encrypted context storage
+  - agent memory MCP
+  - long-term memory LLM
+  - neural handover agent
+  - pgvector semantic recall
+  - conflict resolution memory
+commands:
+  - name: remember
+    description: Store encrypted memory with zero-knowledge encryption
+    usage: synapse remember "<text>" --user <id> [--importance 0.0-1.0]
+  - name: recall
+    description: Retrieve memories by semantic query
+    usage: synapse recall "<query>" --user <id> [--limit 5]
+  - name: handover
+    description: Export signed context package for model migration
+    usage: synapse handover --to <model> --user <id> [--expires 3600]
+  - name: import
+    description: Import handover package to restore context
+    usage: synapse import --blob <base64> --user <id>
+  - name: status
+    description: Check memory vault health and Trust Score
+    usage: synapse status --user <id>
+  - name: forget
+    description: Soft-delete memory (LGPD/GDPR compliant)
+    usage: synapse forget "<query>" --user <id>
